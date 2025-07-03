@@ -1,167 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Landing Page</title>
-  <style>
-    /* Estilos gerais */
-    body, h1, h2, h3, p, ul, li 
-    {
-      margin: 2px;
-      padding: 2px;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      background-color:rgb(203, 202, 202);
-      color: #333;
-      padding: 20px;
-    }
-
-    header {
-      text-align: center;
-       background-color:rgb(251, 239, 104);
-      color: black;
-      padding: 18px 5px;
-      border-radius: 12px;
-    }
-
-    header img {
-      width: 120px;
-      border-radius: 50%;
-      margin-top: 10px;
-    }
-
-    nav {
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color:rgb(0, 0, 0);
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    section {
-      margin: 30px 0;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-      color:rgb(0, 0, 0);
-    }
-
-    article {
-      background-color:rgba(255, 255, 255, 0.79);
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-
-    aside {
-      background-color:rgb(0, 0, 0);
-      padding: 15px;
-      margin: 30px 0;
-      border-left: 5px slidrgb(45, 15, 215);
-      border-radius: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      margin-top: 40px;
-      background-color: #333;
-      color: white;
-      border-radius: 10px;
-    }
-
-    /* Responsivo */
-    @media (max-width: 600px) {
-      header img {
-        width: 80px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Pessoal - Michele Almeida</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Cabeçalho -->
   <header>
     <h1>Michele Almeida</h1>
-    <p>"A educação abre portas da mente que jamais serão fechadas"</p>
-    <img src="avatar.jpg" alt="Sua Foto" style="width: 120px; height: auto; border-radius: 50%;">
+    <p>Estudante de Front-End | HTML e CSS</p>
   </header>
 
-  <!-- Navegação -->
-  <nav>
-    <a href="#sobre">Sobre mim</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#curiosidades e links">Curiosidades e links</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <section class="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Sou uma estudante de desenvolvimento web focada em HTML e CSS. Este portfólio apresenta meus primeiros projetos e aprendizados na área de Front-End.</p>
+  </section>
 
-  <main>
-    <!-- Seção Sobre mim -->
-    <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p>Olá! Sou estudante de análise e desenvolvimento de sistemas e apaixonada por tecnologia. Estou aprendendo HTML, CSS e JavaScript.</p>
-    </section>
+  <section class="projetos">
+    <h2>Projetos</h2>
+    <div class="card">
+      <h3>Calculadora Simples</h3>
+      <p>Uma calculadora funcional criada com HTML, CSS e JavaScript. Permite realizar operações básicas.</p>
+      <a href="#" target="_blank">Ver projeto</a>
+    </div>
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>Página pessoal com layout responsivo e design moderno para apresentação profissional.</p>
+      <a href="#" target="_blank">Ver projeto</a>
+    </div>
+  </section>
 
-    <!-- Seção Habilidades -->
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS (estilização e responsividade)</li>
-        <li>Lógica de programação</li>
-        <li>Linguagens de programação (C, C++, JavaScript, Python)</li>
-      </ul>
-    </section>
+  <section class="contato">
+    <h2>Contato</h2>
+    <p>Email: michelealmeida341@hotmail.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/michele-almeida-60b70b314?utm_source=share&utm_campaign=share_-via&utm_content=pro-file&utm_medium=ios_app" target="_blank">LinkedIn</a>
+  </section>
 
-    <!-- Seção Projetos -->
-    <section id="projetos">
-      <h2>Projetos</h2>
-      
-      <article>
-        <h3>Portfólio Pessoal</h3>
-        <p>Uma página simples para apresentar meus estudos e projetos iniciais em HTML e CSS.</p>
-        <a href="file:///C:/Users/Administrador'/OneDrive/%C3%81rea%20de%20Trabalho/ANALISE%20E%20DESENVOLVIMENTO%20DE%20SISTEMAS/Programa%C3%A7%C3%A3o%20Front-End/portfolio/index.html" target="_blank">Portfólio</a>
-      </article>
-
-      <article>
-        <h3>Calculadora Online</h3>
-        <p>Projeto fictício de uma calculadora feita com HTML, CSS e JavaScript.</p>
-        <a href="file:///C:/Users/Administrador'/OneDrive/%C3%81rea%20de%20Trabalho/ANALISE%20E%20DESENVOLVIMENTO%20DE%20SISTEMAS/Programa%C3%A7%C3%A3o%20Front-End/projeto%20calculadora%20simples/index.html" target="_blank">Calculadora</a>
-      </article>
-    </section>
-
-    <!-- Seção curiosidades e links -->
-    <section id="curiosidades e links">
-      <h2>Curiosidades e links</h2>
-      <p> Gosto de programação.<br>
-         🎧 Escuto música enquanto programo.<br>
-         🔗 <a href="https://github.com/michelealmeida341" target="_blank">Meu GitHub</a> | 
-         <a href="https://linkedin.com/in/michele-almeida-60b70b314?utm_source=share&utm_campaign=share_-via&utm_content=pro-file&utm_medium=ios_app" target="_blank">LinkedIn</a>
-      </p>
-    </section>
-  </main>
-
-  <!-- Rodapé -->
-  <footer id="contato">
-    <p>Contato: michelealmeida341@hotmail.com</p>
-    <p>© 2025 Michele Almeida. Todos os direitos reservados.</p>
+  <footer>
+    <p>&copy; 2025 - Michele Almeida</p>
   </footer>
-
 </body>
 </html>
